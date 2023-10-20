@@ -31,7 +31,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 /**
- * Pour la gestion des interfaces de jeu¸
+ * Pour la gestion des interfaces de jeuÂ¸
  * 
  * 
  * @author Christian Jeune
@@ -42,32 +42,32 @@ public class Controller {
 	private Scene scene;
 	private Group root;
 
-	private final int rangee = 20;// le nombre de rangée
+	private final int rangee = 20;// le nombre de rangÃ©e
 	private final int caseTaille = 35;// la taille des cases
-	private double speed = 0.05;// l'unité selon laquelle la vitesse de l'animation augmente
+	private double speed = 0.05;// l'unitÃ© selon laquelle la vitesse de l'animation augmente
 
-	private List<Point> corpsPos = new ArrayList<>();// coordonnées de chaque partie du corps du serpent
+	private List<Point> corpsPos = new ArrayList<>();// coordonnÃ©es de chaque partie du corps du serpent
 	private List<Rectangle> corps = new ArrayList<>();// liste qui contient tous les rectangles du corps
-	private Point tete;// coordonnées de la tête du serpent
+	private Point tete;// coordonnÃ©es de la tÃªte du serpent
 
 	private Circle cercle = new Circle();// le cercle que le serpent doit chasser
 	private boolean gameOver;// boolean indiquant si le joueur a perdu
 	private Orientation direction = Orientation.RIGHT;// direction initial du serpent
-	private int cercleX;// coordonnée X du cercle à chasser
-	private int cercleY;// coordonnée Y du cercle à chasser
+	private int cercleX;// coordonnÃ©e X du cercle Ã  chasser
+	private int cercleY;// coordonnÃ©e Y du cercle Ã  chasser
 	private int score = 0;// integer contenant le score actuel du joueur
 
-	// Image correspondant à la tête du serpent
+	// Image correspondant Ã  la tÃªte du serpent
 	private Image teteSerpent = new Image("/tete.png");
 	private ImageView vueTete = new ImageView(teteSerpent);
 
-	private Text perdu = new Text();// Text affichant Game Over et le score à la fin de la partie
+	private Text perdu = new Text();// Text affichant Game Over et le score Ã  la fin de la partie
 	private Text scoreText = new Text("Score " + score);// Text affichant le score durant la partie
-	private Button playAgain = new Button("PLAY AGAIN");// Bouton incitant le joueur à réessayer
-	private Timeline timeline;// la loop pour gérer les animations
+	private Button playAgain = new Button("PLAY AGAIN");// Bouton incitant le joueur Ã  rÃ©essayer
+	private Timeline timeline;// la loop pour gÃ©rer les animations
 
 	/**
-	 * Créer l'interface de jeu et démarre la partie
+	 * CrÃ©er l'interface de jeu et dÃ©marre la partie
 	 * 
 	 * 
 	 * @param event
@@ -91,7 +91,7 @@ public class Controller {
 		perdu.setTextOrigin(VPos.CENTER);
 		perdu.setX(8 * caseTaille);
 		perdu.setY(8 * caseTaille);
-		perdu.setVisible(false); // le Text est mis à invisible et s'affiche seulement quand le joueur perd
+		perdu.setVisible(false); // le Text est mis Ã  invisible et s'affiche seulement quand le joueur perd
 
 		scoreText.setFont(Font.font("Times New Roman", 30));
 		scoreText.setFill(Color.WHITE);
@@ -104,14 +104,14 @@ public class Controller {
 		playAgain.setBackground(new Background(new BackgroundFill(Color.LIMEGREEN, null, null)));
 		playAgain.setLayoutX(8 * caseTaille);
 		playAgain.setLayoutY(10 * caseTaille);
-		playAgain.setVisible(false);// le bouton est mis à invisible et s'affiche seulement quand le joueur perd
+		playAgain.setVisible(false);// le bouton est mis Ã  invisible et s'affiche seulement quand le joueur perd
 		playAgain.setDisable(true);
 		playAgain.setFocusTraversable(true);
-		playAgain.setDefaultButton(true);// la touche entrée génère un évènement
+		playAgain.setDefaultButton(true);// la touche entrÃ©e gÃ©nÃ¨re un Ã©vÃ¨nement
 
 		/*
-		 * Lors d'un évènement sur le bouton playAgain on crée un nouveau controller
-		 * nous permettant de créer une nouvelle interface de jeu
+		 * Lors d'un Ã©vÃ¨nement sur le bouton playAgain on crÃ©e un nouveau controller
+		 * nous permettant de crÃ©er une nouvelle interface de jeu
 		 */
 		playAgain.setOnAction(new EventHandler<ActionEvent>() {
 
@@ -128,9 +128,9 @@ public class Controller {
 
 		});
 
-		root.getChildren().addAll(perdu, playAgain, scoreText); // ajout des composantes à la racine
+		root.getChildren().addAll(perdu, playAgain, scoreText); // ajout des composantes Ã  la racine
 
-		// initialisation des coordonnées des trois premières parties du corps du
+		// initialisation des coordonnÃ©es des trois premiÃ¨res parties du corps du
 		// serpent
 		for (int i = 0; i < 3; i++) {
 			corpsPos.add(new Point(5, rangee / 2));
@@ -138,7 +138,7 @@ public class Controller {
 		tete = corpsPos.get(0);
 
 		/*
-		 * Selon les arrows keys et les keys WASD appuyés la direction change et la tête
+		 * Selon les arrows keys et les keys WASD appuyÃ©s la direction change et la tÃªte
 		 * du serpent tourne
 		 */
 		scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
@@ -174,18 +174,18 @@ public class Controller {
 		genererCercle();
 		creerTete();
 
-		// création et démarrage de la loop
+		// crÃ©ation et dÃ©marrage de la loop
 		timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> play()));
 		timeline.setCycleCount(Animation.INDEFINITE);
 		timeline.play();
 	}
 
 	/**
-	 * Gère le déplacement du serpent sur l'interface
+	 * GÃ¨re le dÃ©placement du serpent sur l'interface
 	 */
 	public void play() {
 
-		// si le joueur perd, rend toutes les composantes invisibles, visibles et arrête
+		// si le joueur perd, rend toutes les composantes invisibles, visibles et arrÃªte
 		// la loop
 		if (gameOver) {
 			perdu.setVisible(gameOver);
@@ -197,8 +197,8 @@ public class Controller {
 
 		else {
 
-			// met à jour les coordonnées du corps du serpent et déplace les rectangles
-			// les coordonnées d'un noeud sont affectées aux coordonnées du noeud suivante
+			// met Ã  jour les coordonnÃ©es du corps du serpent et dÃ©place les rectangles
+			// les coordonnÃ©es d'un noeud sont affectÃ©es aux coordonnÃ©es du noeud suivante
 			for (int i = corpsPos.size() - 1; i >= 1; i--) {
 				corpsPos.get(i).x = corpsPos.get(i - 1).x;
 				corpsPos.get(i).y = corpsPos.get(i - 1).y;
@@ -208,8 +208,8 @@ public class Controller {
 
 			}
 
-			// dépandemment de la direction met à jour les coordonnées de la tête et la
-			// déplace
+			// dÃ©pandemment de la direction met Ã  jour les coordonnÃ©es de la tÃªte et la
+			// dÃ©place
 			switch (direction) {
 			case RIGHT:
 				if (direction != Orientation.LEFT) {
@@ -255,7 +255,7 @@ public class Controller {
 	}
 
 	/**
-	 * Choisi au hasard les coordonnées en X et en Y du cercle et l'ajoute à
+	 * Choisi au hasard les coordonnÃ©es en X et en Y du cercle et l'ajoute Ã 
 	 * l'interface
 	 */
 	public void genererCercle() {
@@ -263,8 +263,8 @@ public class Controller {
 			cercleX = (int) (Math.random() * rangee);
 			cercleY = (int) (Math.random() * rangee);
 
-			// vérifie si les coordonnées choisis ne correspondent pas à une
-			// coordonnée du serpent
+			// vÃ©rifie si les coordonnÃ©es choisis ne correspondent pas Ã  une
+			// coordonnÃ©e du serpent
 			for (Point snake : corpsPos) {
 				if (snake.getX() == cercleX && snake.getY() == cercleY) {
 					continue start;
@@ -278,7 +278,7 @@ public class Controller {
 	}
 
 	/**
-	 * Ajoute la tête du serpent et les premières parties de son corps à l'interface
+	 * Ajoute la tÃªte du serpent et les premiÃ¨res parties de son corps Ã  l'interface
 	 * 
 	 */
 	public void creerTete() {
@@ -300,7 +300,7 @@ public class Controller {
 	}
 
 	/**
-	 * Crée un nouveau rectangle pour le serpent et l'ajoute à l'interface
+	 * CrÃ©e un nouveau rectangle pour le serpent et l'ajoute Ã  l'interface
 	 */
 	public void creerRectangle() {
 		Rectangle rect = new Rectangle();
@@ -317,7 +317,7 @@ public class Controller {
 	}
 
 	/**
-	 * Vérifie si le joueur a perdu
+	 * VÃ©rifie si le joueur a perdu
 	 */
 	public void gameOver() {
 
@@ -326,7 +326,7 @@ public class Controller {
 			gameOver = true;
 		}
 
-		// si le serpent se tue lui-même
+		// si le serpent se tue lui-mÃªme
 		for (int i = 1; i < corpsPos.size(); i++) {
 			if (tete.x == corpsPos.get(i).getX() && tete.y == corpsPos.get(i).getY()) {
 				gameOver = true;
@@ -336,8 +336,8 @@ public class Controller {
 	}
 
 	/**
-	 * Crée un nouveau rectangle pour le serpent, enlève le cercle de l'interface
-	 * génère un autre cercle, met à jour le score et augmente la vitesse du
+	 * CrÃ©e un nouveau rectangle pour le serpent, enlÃ¨ve le cercle de l'interface
+	 * gÃ©nÃ¨re un autre cercle, met Ã  jour le score et augmente la vitesse du
 	 * serpent
 	 */
 	public void chasserCercle() {
@@ -349,7 +349,7 @@ public class Controller {
 			score++;
 			scoreText.setText("Score " + score);
 			timeline.setRate(1 + speed);
-			speed += 0.05;
+			speed += 0.10;
 		}
 	}
 
