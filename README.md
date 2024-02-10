@@ -1,6 +1,6 @@
-**Simple Snake Game: JavaFX**
+**Snake Game**
 
-Welcome to the Simple Snake Game repository! This project is a classic snake game implemented using JavaFX and Scene Builder. Enjoy the nostalgia of controlling a snake as it moves around the game board, eating food to grow longer while avoiding collisions with itself and the walls.
+This project is a basic snake game implemented using JavaFX and Scene Builder. Enjoy the nostalgia of controlling a snake as it moves around the game board, eating food to grow longer while avoiding collisions with itself and the walls.
 
 ### Features:
 - **Classic Gameplay:** Experience the classic gameplay of controlling a snake in a grid-based environment.
@@ -21,7 +21,7 @@ Welcome to the Simple Snake Game repository! This project is a classic snake gam
 6. **Restart:** Click the restart button to play again after the game ends.
 
 ### Requirements:
-- Java Development Kit (JDK)
+- jre 1.8
 - JavaFX Library
 - Java IDE (IntelliJ IDEA, Eclipse, etc.)
 
@@ -29,18 +29,13 @@ Welcome to the Simple Snake Game repository! This project is a classic snake gam
 Contributions to this project are welcome! If you'd like to contribute, please fork the repository, make your changes, and submit a pull request.
 
 ### Issues and Support:
-If you encounter any issues while playing the game or have any questions, feel free to open an issue on GitHub or contact [Your Email Address] for assistance.
-
-### License:
-This project is licensed under the [License Name]. See the [LICENSE](LICENSE) file for details.
+If you encounter any issues while playing the game or have any questions, feel free to open an issue on GitHub.
 
 ### Acknowledgements:
-This Simple Snake Game project was developed by [Your Name] as part of [Project Name, Course Name, etc.]. We would like to express our gratitude to [Instructor Name] for guidance and support throughout the development process.
+This Simple Snake Game project was developed by me(@chris-jeune) as part of [Development of programs in a graphical environment course].
 
 ### Future Improvements:
 - **Enhanced Graphics:** Improve the visual elements of the game, including snake sprites, food items, and background.
-- **Additional Features:** Implement additional features such as power-ups, different game modes, and customizable settings.
-- **Bug Fixes and Optimization:** Address any existing issues, optimize performance, and enhance the overall user experience.
 - **Community Feedback:** Gather feedback from users and the development community to identify areas for improvement and prioritize future updates.
 
 ### Enjoy the Game!
