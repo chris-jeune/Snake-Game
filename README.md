@@ -1,4 +1,7 @@
-**Snake Game**
+# Snake Game
+<p align="center">
+  <img width="460" height="300" src="https://github.com/chris-jeune/Snake-Game/assets/145855247/e6e5dd08-a7e5-4661-8215-36ff34e48cfa">
+</p>
 
 This project is a basic snake game implemented using JavaFX and Scene Builder. Enjoy the nostalgia of controlling a snake as it moves around the game board, eating food to grow longer while avoiding collisions with itself and the walls.
 
@@ -8,6 +11,8 @@ This project is a basic snake game implemented using JavaFX and Scene Builder. E
 - **Scoring System:** Keep track of your score as the snake eats food and grows longer.
 - **Game Over Detection:** Detect collisions with the snake's body or the game board's boundaries to end the game.
 - **Restart Option:** Restart the game with the click of a button after the game ends.
+
+<img src="https://github.com/chris-jeune/Snake-Game/assets/145855247/5df7e0a0-38e8-482a-9cce-af08a77582f7" width="425"/> <img src="https://github.com/chris-jeune/Snake-Game/assets/145855247/c3e838c7-e4c2-42dc-b8ee-c5d3d64f10b9" width="425"/> 
 
 ### Getting Started:
 1. **Clone the Repository:** Clone this repository to your local machine using the following command:
