@@ -12,7 +12,9 @@ This project is a basic snake game implemented using JavaFX and Scene Builder. E
 - **Game Over Detection:** Detect collisions with the snake's body or the game board's boundaries to end the game.
 - **Restart Option:** Restart the game with the click of a button after the game ends.
 
-<img src="https://github.com/chris-jeune/Snake-Game/assets/145855247/5df7e0a0-38e8-482a-9cce-af08a77582f7" width="425"/> <img src="https://github.com/chris-jeune/Snake-Game/assets/145855247/c3e838c7-e4c2-42dc-b8ee-c5d3d64f10b9" width="425"/> 
+<p align="center">
+<img src="https://github.com/chris-jeune/Snake-Game/assets/145855247/5df7e0a0-38e8-482a-9cce-af08a77582f7" width="300"/> <img src="https://github.com/chris-jeune/Snake-Game/assets/145855247/c3e838c7-e4c2-42dc-b8ee-c5d3d64f10b9" width="300"/> 
+</p>
 
 ### Getting Started:
 1. **Clone the Repository:** Clone this repository to your local machine using the following command:
@@ -37,10 +39,10 @@ Contributions to this project are welcome! If you'd like to contribute, please f
 If you encounter any issues while playing the game or have any questions, feel free to open an issue on GitHub.
 
 ### Acknowledgements:
-This Simple Snake Game project was developed by me(@chris-jeune) as part of [Development of programs in a graphical environment course].
+This Simple Snake Game project was developed by me(@chris-jeune) as part of the Development of programs in a graphical environment course.
 
 ### Future Improvements:
-- **Enhanced Graphics:** Improve the visual elements of the game, including snake sprites, food items, and background.
+- **Enhanced Graphics:** Improve the visual elements of the game, including snake sprites, food items, and the grid.
 - **Community Feedback:** Gather feedback from users and the development community to identify areas for improvement and prioritize future updates.
 
 ### Enjoy the Game!
