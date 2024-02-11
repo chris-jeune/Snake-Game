@@ -46,4 +46,4 @@ This Simple Snake Game project was developed by me(@chris-jeune) as part of the 
 - **Community Feedback:** Gather feedback from users and the development community to identify areas for improvement and prioritize future updates.
 
 ### Enjoy the Game!
-Thank you for exploring the Simple Snake Game repository. We hope you enjoy the nostalgic experience of playing the classic snake game in JavaFX. If you find the game enjoyable, don't forget to leave a star ⭐️ on the repository. Happy gaming!
+Thank you for exploring the Simple Snake Game repository. I hope you enjoy playing this snake game. If you find the game enjoyable, don't forget to leave a star ⭐️ on the repository.
