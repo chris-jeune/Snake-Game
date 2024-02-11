@@ -19,7 +19,7 @@ This project is a basic snake game implemented using JavaFX and Scene Builder. E
 ### Getting Started:
 1. **Clone the Repository:** Clone this repository to your local machine using the following command:
    ```
-   git clone https://github.com/your-username/simple-snake-game.git
+   git clone https://github.com/chris-jeune/Snake-Game.git
    ```
 2. **Open the Project:** Open the project in your favorite Java IDE (e.g., IntelliJ IDEA, Eclipse).
 3. **Set Up JavaFX:** Make sure you have JavaFX set up in your IDE. If not, follow the instructions for setting up JavaFX in your specific IDE.
