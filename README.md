@@ -38,12 +38,5 @@ Contributions to this project are welcome! If you'd like to contribute, please f
 ### Issues and Support:
 If you encounter any issues while playing the game or have any questions, feel free to open an issue on GitHub.
 
-### Acknowledgements:
-This Simple Snake Game project was developed by me(@chris-jeune) as part of the Development of programs in a graphical environment course.
-
-### Future Improvements:
-- **Enhanced Graphics:** Improve the visual elements of the game, including snake sprites, food items, and the grid.
-- **Community Feedback:** Gather feedback from users and the development community to identify areas for improvement and prioritize future updates.
-
 ### Enjoy the Game!
 Thank you for exploring the Simple Snake Game repository. I hope you enjoy playing this snake game. If you find the game enjoyable, don't forget to leave a star ⭐️ on the repository.
