@@ -32,11 +32,5 @@ This project is a basic snake game implemented using JavaFX and Scene Builder. E
 - JavaFX Library
 - Java IDE (IntelliJ IDEA, Eclipse, etc.)
 
-### Contributions:
-Contributions to this project are welcome! If you'd like to contribute, please fork the repository, make your changes, and submit a pull request.
-
-### Issues and Support:
-If you encounter any issues while playing the game or have any questions, feel free to open an issue on GitHub.
-
 ### Enjoy the Game!
 Thank you for exploring the Simple Snake Game repository. I hope you enjoy playing this snake game. If you find the game enjoyable, don't forget to leave a star ⭐️ on the repository.
