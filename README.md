@@ -16,6 +16,10 @@ This project is a basic snake game implemented using JavaFX and Scene Builder. E
 <img src="https://github.com/chris-jeune/Snake-Game/assets/145855247/5df7e0a0-38e8-482a-9cce-af08a77582f7" width="300"/> <img src="https://github.com/chris-jeune/Snake-Game/assets/145855247/c3e838c7-e4c2-42dc-b8ee-c5d3d64f10b9" width="300"/> 
 </p>
 
+### Demo
+
+https://github.com/chris-jeune/Snake-Game/assets/145855247/f8defc9f-50a0-46a0-a6e9-6ed972b9acd5
+
 ### Getting Started:
 1. **Clone the Repository:** Clone this repository to your local machine using the following command:
    ```
